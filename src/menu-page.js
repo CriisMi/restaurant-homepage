@@ -1,26 +1,5 @@
 export function menuPage() {
-    const content = document.querySelector('div');
-
-    const nav = document.createElement('ul');
-    nav.setAttribute('class', 'navbar');
-
-    const home = document.createElement('li');
-    home.textContent = 'Home';
-    nav.appendChild(home);
-
-    const menu = document.createElement('li');
-    menu.textContent = 'Menu';
-    nav.appendChild(menu);
-
-    const contact = document.createElement('li');
-    contact.textContent = 'Contact';
-    nav.appendChild(contact);
-
-    content.appendChild(nav);
-
-
-    const main = document.createElement('div');
-    main.setAttribute('class', 'main');
+    const main = document.querySelector('.main');
 
     const title = document.createElement('div');
     title.textContent = "Menu";
@@ -32,6 +11,5 @@ export function menuPage() {
     info.setAttribute('class', 'info');
     main.appendChild(info);
 
-    content.appendChild(main);
     
 };
