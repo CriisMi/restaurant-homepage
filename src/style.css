@@ -1,0 +1,118 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style */
+
+:root {
+    --dark-color: #3b0404;
+    --light-color: #f3d1cc;
+    --fancy-light: #DE847B;
+    --fancy-dark: #B95C50;
+}
+
+@font-face {
+    font-family: 'Title';
+    src: url('./Passions_Conflict/PassionsConflict-Regular.ttf');
+    font-weight: 3000;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--light-color);
+    display: grid;
+    grid-template-columns: 1fr minmax(500px, 5fr) 1fr;
+}
+
+#content {
+    padding: 10px 50px 50px 50px;
+
+    grid-area: 1 / 2 / 2 / 3;
+    place-self: center stretch;
+    background-color: var(--fancy-light);
+
+    display: grid;
+    grid-template-rows: 30px 1fr;
+
+    background: url(diana-polekhina-i5BY6W2ttts-unsplash.jpg);
+    background-size: cover;
+
+}
+
+.navbar {
+    background-color: var(--fancy-dark);
+    color: var(--light-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.main {
+    margin-top: 50px;
+    min-height: 100vh;
+}
+
+.title {
+    font-family: 'Title';
+    font-size: 64px;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.info {
+    padding: 75px 50px 0 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: var(--dark-color);
+}
