@@ -7,9 +7,28 @@ export function contactPage() {
     title.setAttribute('class', 'title');
     main.appendChild(title);
 
-    const info = document.createElement('div');
-    info.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-    info.setAttribute('class', 'info');
-    main.appendChild(info);
-    
+
+    const contact = document.createElement('div');
+    contact.setAttribute('class', 'contact');
+    main.appendChild(contact);
+
+    const adress1 = document.createElement('div');
+    adress1.textContent = "Adress";
+    adress1.setAttribute('class', 'cont1');
+    contact.appendChild(adress1);
+
+    const adress2 = document.createElement('div');
+    adress2.textContent = "23 Boulevard du Montparnasse, Paris, 75006, France";
+    adress2.setAttribute('class', 'cont2');
+    contact.appendChild(adress2);
+
+    const phone1 = document.createElement('div');
+    phone1.textContent = "Phone";
+    phone1.setAttribute('class', 'cont1');
+    contact.appendChild(phone1);
+
+    const phone2 = document.createElement('div');
+    phone2.textContent = "01 42 22 65 65";
+    phone2.setAttribute('class', 'cont2');
+    contact.appendChild(phone2);
 };
