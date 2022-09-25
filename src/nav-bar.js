@@ -10,7 +10,7 @@ export function navBar() {
     nav.appendChild(home);
 
     const menu = document.createElement('li');
-    menu.textContent = 'Menu';
+    menu.textContent = 'Macarons';
     menu.setAttribute('class', 'menu');
     nav.appendChild(menu);
 

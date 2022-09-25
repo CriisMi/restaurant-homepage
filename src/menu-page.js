@@ -2,14 +2,41 @@ export function menuPage() {
     const main = document.querySelector('.main');
 
     const title = document.createElement('div');
-    title.textContent = "Menu";
+    title.textContent = "Macarons";
     title.setAttribute('class', 'title');
     main.appendChild(title);
 
-    const info = document.createElement('div');
-    info.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-    info.setAttribute('class', 'info');
-    main.appendChild(info);
+    const makeItem = (imgUrl, description) => {
+        const item = document.createElement('div');
+        item.setAttribute('class', 'menu-item')
+        const img = document.createElement('img');
+        img.setAttribute('class', 'menu-img');
+        img.src = imgUrl;
+        item.appendChild(img);
 
+        const name = document.createElement('div');
+        name.setAttribute('class', 'item-name');
+        name.textContent = description[0];
+        item.appendChild(name);
+
+        const info = document.createElement('div');
+        info.setAttribute('class', 'item-info');
+        info.textContent = description[1];
+        item.appendChild(info);
+
+        main.appendChild(item);
+    }
     
-};
+    const imgUrl1 = 'src/taylor-heery-8uK5DTVQ7As-unsplash.jpg';
+    const description1 = ['Best Seller', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum lectus sed dui imperdiet rhoncus. Phasellus id elit lobortis, malesuada orci ut, auctor ante. Sed ultrices scelerisque nisl, sit amet fringilla magna.'];
+
+    makeItem(imgUrl1, description1);
+
+    const imgUrl2 = 'src/massimo-adami-qjAoZNfqLtk-unsplash.jpg';
+    const description2 = ['Chef Choice', 'Proin et enim libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin ultrices luctus mauris. Sed eget ipsum orci.'];
+    makeItem(imgUrl2, description2);
+
+    const imgUrl3 = 'src/diana-polekhina-qsTJXB6zTLg-unsplash.jpg';
+    const description3 = ['Gift Pack', 'In nunc massa, iaculis id volutpat et, pulvinar gravida velit. Duis at libero lacus. Suspendisse ac lacus sem. Ut mollis, ante in ultricies gravida, tortor diam commodo ligula, vel ultricies nunc mauris sed neque.'];
+    makeItem(imgUrl3, description3);
+}

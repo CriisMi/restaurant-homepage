@@ -80,8 +80,7 @@ body {
     display: grid;
     grid-template-rows: 30px 1fr;
 
-    background: url(diana-polekhina-i5BY6W2ttts-unsplash.jpg);
-    background-size: cover;
+    background-color: var(--fancy-light);
 
 }
 
@@ -116,3 +115,10 @@ body {
     text-align: center;
     color: var(--dark-color);
 }
+
+.menu-img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
