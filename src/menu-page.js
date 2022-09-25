@@ -6,6 +6,11 @@ export function menuPage() {
     title.setAttribute('class', 'title');
     main.appendChild(title);
 
+    const menu = document.createElement('div');
+    menu.setAttribute('class', 'menu');
+    main.appendChild(menu);
+
+
     const makeItem = (imgUrl, description) => {
         const item = document.createElement('div');
         item.setAttribute('class', 'menu-item')
@@ -14,17 +19,21 @@ export function menuPage() {
         img.src = imgUrl;
         item.appendChild(img);
 
+        const descr = document.createElement('div');
+        descr.setAttribute('class', 'item-descr')
+        item.appendChild(descr);
+
         const name = document.createElement('div');
         name.setAttribute('class', 'item-name');
         name.textContent = description[0];
-        item.appendChild(name);
+        descr.appendChild(name);
 
         const info = document.createElement('div');
         info.setAttribute('class', 'item-info');
         info.textContent = description[1];
-        item.appendChild(info);
+        descr.appendChild(info);
 
-        main.appendChild(item);
+        menu.appendChild(item);
     }
     
     const imgUrl1 = 'src/taylor-heery-8uK5DTVQ7As-unsplash.jpg';

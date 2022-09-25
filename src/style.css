@@ -116,9 +116,33 @@ body {
     color: var(--dark-color);
 }
 
+/* menu page style */
+
+.menu {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 20px;
+    row-gap: 60px;
+    justify-items: center;
+}
+
 .menu-img {
     height: 300px;
     width: 300px;
     object-fit: cover;
 }
 
+.item-descr {
+    width: 300px;
+    text-align: justify;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    color: var(--dark-color);
+}
+
+.item-name {
+    margin: 20px 0;
+    font-size: 1.5em;
+}

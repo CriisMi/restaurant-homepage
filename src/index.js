@@ -12,19 +12,19 @@ const removeContent = () => {
     content.textContent = '';
 }
 
-const home = document.querySelector('.home');
+const home = document.querySelector('.home-tab');
 home.addEventListener("click", () => {
     removeContent();
     initialPage();
 })
 
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.menu-tab');
 menu.addEventListener("click", () => {
     removeContent();
     menuPage();
 })
 
-const contact = document.querySelector('.contact');
+const contact = document.querySelector('.contact-tab');
 contact.addEventListener("click", () => {
     removeContent();
     contactPage();
