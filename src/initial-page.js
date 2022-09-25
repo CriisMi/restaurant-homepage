@@ -1,4 +1,7 @@
+import Img from './diana-polekhina-i5BY6W2ttts-unsplash.jpg';
+
 export function initialPage() {
+
     const main = document.querySelector('.main');
     main.setAttribute('class', 'main');    
 
@@ -8,7 +11,7 @@ export function initialPage() {
 
     const img = document.createElement('img');
     img.setAttribute('class', 'home-img');
-    img.src = 'src/diana-polekhina-i5BY6W2ttts-unsplash.jpg';
+    img.src = Img;
     container.appendChild(img);
 
     const title = document.createElement('div');

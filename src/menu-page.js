@@ -1,3 +1,8 @@
+import Img1 from './taylor-heery-8uK5DTVQ7As-unsplash.jpg';
+import Img2 from './massimo-adami-qjAoZNfqLtk-unsplash.jpg';
+import Img3 from './diana-polekhina-qsTJXB6zTLg-unsplash.jpg';
+
+
 export function menuPage() {
     const main = document.querySelector('.main');
 
@@ -36,16 +41,13 @@ export function menuPage() {
         menu.appendChild(item);
     }
     
-    const imgUrl1 = 'src/taylor-heery-8uK5DTVQ7As-unsplash.jpg';
+    
     const description1 = ['Best Seller', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum lectus sed dui imperdiet rhoncus. Phasellus id elit lobortis, malesuada orci ut, auctor ante. Sed ultrices scelerisque nisl, sit amet fringilla magna.'];
+    makeItem(Img1, description1);
 
-    makeItem(imgUrl1, description1);
-
-    const imgUrl2 = 'src/massimo-adami-qjAoZNfqLtk-unsplash.jpg';
     const description2 = ['Chef Choice', 'Proin et enim libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin ultrices luctus mauris. Sed eget ipsum orci.'];
-    makeItem(imgUrl2, description2);
+    makeItem(Img2, description2);
 
-    const imgUrl3 = 'src/diana-polekhina-qsTJXB6zTLg-unsplash.jpg';
     const description3 = ['Gift Pack', 'In nunc massa, iaculis id volutpat et, pulvinar gravida velit. Duis at libero lacus. Suspendisse ac lacus sem. Ut mollis, ante in ultricies gravida, tortor diam commodo ligula, vel ultricies nunc mauris sed neque.'];
-    makeItem(imgUrl3, description3);
+    makeItem(Img3, description3);
 }
